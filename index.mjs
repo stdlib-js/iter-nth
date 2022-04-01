@@ -1,0 +1,4 @@
+// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-iterator-like@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-integer@esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs";var i=e,s=t.isPrimitive,n=r;var a=function(e,t){var r,a;if(!i(e))throw new TypeError(n("invalid argument. First argument must be an iterator. Value: `%s`.",e));if(!s(t))throw new TypeError(n("invalid argument. Second argument must be a positive integer. Value: `%s`.",t));for(r=0;;){if(r+=1,(a=e.next()).done)return;if(r===t)return a.value}};export{a as default};
+//# sourceMappingURL=index.mjs.map
