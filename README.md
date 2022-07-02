@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.iterNth;
+})();
 })();
 </script>
 ```
@@ -121,6 +123,7 @@ var v = iterNth( arr, 10 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 function threshold( r ) {
     return ( r > 0.95 );
@@ -141,6 +144,7 @@ var bool = iterNth( miter, 50 );
 
 console.log( bool );
 
+})();
 })();
 </script>
 </body>
@@ -247,9 +251,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/umd
+[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/umd/tree/umd
 
-[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last/tree/umd
+[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
