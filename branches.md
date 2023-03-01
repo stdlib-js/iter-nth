@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/iter/nth"
-click B href "https://github.com/stdlib-js/iter-nth/tree/main"
-click C href "https://github.com/stdlib-js/iter-nth/tree/production"
-click D href "https://github.com/stdlib-js/iter-nth/tree/esm"
-click E href "https://github.com/stdlib-js/iter-nth/tree/deno"
-click F href "https://github.com/stdlib-js/iter-nth/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/iter/nth"
+%% click B href "https://github.com/stdlib-js/iter-nth/tree/main"
+%% click C href "https://github.com/stdlib-js/iter-nth/tree/production"
+%% click D href "https://github.com/stdlib-js/iter-nth/tree/esm"
+%% click E href "https://github.com/stdlib-js/iter-nth/tree/deno"
+%% click F href "https://github.com/stdlib-js/iter-nth/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/iter/nth
