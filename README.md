@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-nth
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterNth = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterNth = require( 'path/to/vendor/umd/iter-nth/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterNth;
-})();
-</script>
+var iterNth = require( '@stdlib/iter-nth' );
 ```
 
 #### iterNth( iterator, n )
@@ -112,15 +104,10 @@ var v = iterNth( arr, 10 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-iter-randu' );
+var iterMap = require( '@stdlib/iter-map' );
+var iterNth = require( '@stdlib/iter-nth' );
 
 function threshold( r ) {
     return ( r > 0.95 );
@@ -140,11 +127,6 @@ var bool = iterNth( miter, 50 );
 // returns <boolean>
 
 console.log( bool );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -227,7 +209,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -247,9 +229,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/umd
+[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first
 
-[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last/tree/umd
+[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last
 
 <!-- </related-links> -->
 
