@@ -45,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-nth
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterNth from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@esm/index.mjs';
+var iterNth = require( '@stdlib/iter-nth' );
 ```
 
 #### iterNth( iterator, n )
@@ -60,7 +76,7 @@ import iterNth from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@esm/index.mj
 Returns the nth [iterated][mdn-iterator-protocol] value.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 0, 0, 1, 0, 0 ] );
 
@@ -71,7 +87,7 @@ var v = iterNth( arr, 3 );
 If `n` exceeds the total number of [iterated][mdn-iterator-protocol] values, the function returns `undefined`.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 0, 0, 1, 0, 0 ] );
 
@@ -99,15 +115,10 @@ var v = iterNth( arr, 10 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@esm/index.mjs';
-import iterNth from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-iter-randu' );
+var iterMap = require( '@stdlib/iter-map' );
+var iterNth = require( '@stdlib/iter-nth' );
 
 function threshold( r ) {
     return ( r > 0.95 );
@@ -127,10 +138,6 @@ var bool = iterNth( miter, 50 );
 // returns <boolean>
 
 console.log( bool );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -169,7 +176,7 @@ console.log( bool );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -186,7 +193,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -233,9 +240,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/esm
+[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first
 
-[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last/tree/esm
+[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last
 
 <!-- </related-links> -->
 
