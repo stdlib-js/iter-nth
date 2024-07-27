@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterNth from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-nth/tags). For example,
+
+```javascript
 import iterNth from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@v0.2.2-esm/index.mjs';
 ```
 
@@ -107,7 +112,7 @@ var v = iterNth( arr, 10 );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
 import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@esm/index.mjs';
-import iterNth from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@v0.2.2-esm/index.mjs';
+import iterNth from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-nth@esm/index.mjs';
 
 function threshold( r ) {
     return ( r > 0.95 );
