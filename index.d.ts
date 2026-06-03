@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,28 +16,34 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Return the nth iterated value.
+* Returns the nth iterated value.
 *
-* @module @stdlib/iter-nth
+* ## Notes
+*
+* -   If `n` exceeds the total number of iterations, the function returns `undefined`.
+*
+* @param iterator - input iterator
+* @param n - iteration number
+* @returns nth iterated value
 *
 * @example
 * var array2iterator = require( '@stdlib/array-to-iterator' );
-* var iterNth = require( '@stdlib/iter-nth' );
 *
 * var it = array2iterator( [ 0, 0, 1, 0, 0 ] );
 *
 * var v = iterNth( it, 3 );
 * // returns 1
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterNth( iterator: Iterator, n: number ): any;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterNth;
